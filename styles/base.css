@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+main{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    border: 3px solid black;
+}
+header{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+header img{
+    position: relative;
+    margin: auto;
+    border: 2px solid black;
+}
+nav{ 
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+nav a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    display: block;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Play', sans-serif;
+}
+nav a:hover{
+    font-size: 23px;
+    color: blue;
+    
+}
+
+main h2{
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    
+}
+main .card h3{
+    font-family: 'Bebas Neue', sans-serif;
+    height: 70px;
+    margin: 10px;
+}
+.card-2 h3{
+    font-family: 'Bebas Neue', sans-serif;
+    padding:40px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+ul a{
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    font-family: 'Play', sans-serif;
+    
+}
+
+ul a:hover{
+    font-size: 105%;
+    color: blue;
+}
+footer{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Play', sans-serif;
+    
+}
