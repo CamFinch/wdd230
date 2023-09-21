@@ -1,10 +1,30 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 main{
-    width: 700px;
+    max-width: 700px;
     margin: auto;
     text-align: center;
-    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(300px, auto);
+    grid-auto-flow: row;
+    grid-auto-rows: 300px 100px;
+
+    
+    
+}
+@media (max-width: 900px){
+    main{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        
+    }
+    
+
 }
 header{
     text-align: center;
@@ -14,16 +34,17 @@ header{
 }
 header img{
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     border: 2px solid black;
 }
 nav{ 
     text-align: center;
-    width: 400px;
-    height: 300px;
-    margin: auto;
+    max-width: 900px;
+    margin: 0 auto;
+
 }
 nav a{
+    
     text-decoration: none;
     margin: 10px;
     color: black;
@@ -32,36 +53,55 @@ nav a{
     font-size: 22px;
     font-family: 'Play', sans-serif;
 }
+nav ul {
+
+    list-style: none;
+}
 nav a:hover{
     font-size: 23px;
     color: blue;
     
 }
 
-main h2{
+@media (min-width: 700px){
+    nav ul{
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+}
+
+main .container-1 h2{
     font-family: 'Bebas Neue', sans-serif;
     padding: 20px;
     border-bottom: 1px solid grey;
     
 }
-main .card h3{
+main .container-1 .card h3{
     font-family: 'Bebas Neue', sans-serif;
-    height: 70px;
+    height: auto;
+    max-height: 80px;
     margin: 10px;
+}
+.container-1 {
+    border: 3px solid black;
+
 }
 .card-2 h3{
     font-family: 'Bebas Neue', sans-serif;
     padding:40px;
 }
 
-ul {
+.container-1 .card ul {
     list-style: none;
     text-align: center;
     margin: 10px;
     padding: 10px;
     
 }
-ul a{
+.container-1 .card ul a{
     text-decoration: none;
     margin: 20px;
     color: black;
@@ -69,9 +109,14 @@ ul a{
     
 }
 
-ul a:hover{
+.container-1 .card ul a:hover{
     font-size: 105%;
     color: blue;
+}
+
+.container-2{
+    
+    border: 3px solid black;
 }
 footer{
     text-align: center;
