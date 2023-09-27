@@ -16,16 +16,7 @@ main{
     
     
 }
-@media (max-width: 900px){
-    main{
-        display: block;
-        margin: auto;
-        padding: 10px;
-        
-    }
-    
 
-}
 header{
     text-align: center;
     width: 100%;
@@ -38,9 +29,11 @@ header img{
     border: 2px solid black;
 }
 nav{ 
+    position: relative;
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
+
 
 }
 nav a{
@@ -54,7 +47,7 @@ nav a{
     font-family: 'Play', sans-serif;
 }
 nav ul {
-
+    text-align: center;
     list-style: none;
 }
 nav a:hover{
@@ -63,16 +56,60 @@ nav a:hover{
     
 }
 
-@media (min-width: 700px){
+#menu {
+    position: absolute;
+    top: 7%;
+    right: 10%
+}
+
+
+@media (max-width: 800px){
+    nav ul{
+        display: none;
+    }
+
+    main{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        
+    }
+
+    
+    
+    
+    iframe {
+        margin: auto;
+        padding: 15px;
+        border: none;
+        height: 240px;
+        width: 370px;
+    }
+
+    
+}
+
+@media (min-width: 600px){
     nav ul{
         display: flex;
     }
-    nav ul li {
+    nav ul li{
         flex: 1 1 100%;
+        place-items: center;
     }
+    iframe {
+        margin: auto;
+        padding: 15px;
+        border: none;
+        height: 500px;
+        width: 700px;
+    }
+    #menu {
+        display: none;
+    }
+ 
 
 }
-
 main .container-1 h2{
     font-family: 'Bebas Neue', sans-serif;
     padding: 20px;
@@ -123,4 +160,27 @@ footer{
     padding: 30px;
     font-family: 'Play', sans-serif;
     
+}
+
+
+#map {
+    text-align: center;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+.open li a {
+    display: block;
 }
