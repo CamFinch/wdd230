@@ -1,0 +1,50 @@
+/* bc6c25, dda15e, fefae0, 283618, 606c38 */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* font-family: 'Anton', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+/* font-family: 'Play', sans-serif; */
+
+h1, h2{
+    font-family: 'Anton', sans-serif;
+}
+
+p {
+    font-family: 'Play', sans-serif;
+}
+
+#background {
+    color: #fefae0;
+    border: 1px solid black;
+    background-color: black;;
+}
+
+#headings {
+    color: #bc6c25;
+    border: 1px solid black;
+}
+#section-background {
+    color: #dda15e;
+    border: 1px solid black;
+}
+#accent {
+    color: #606c38;
+    border: 1px solid black;
+}
+
+#large-view {
+    border: 2px solid black;
+    
+}
+
+#mobile-view {
+    border: 2px solid black;
+    margin-top: 10px;
+    
+}
+
+.wireframe {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+}

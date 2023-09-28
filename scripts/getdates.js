@@ -1,5 +1,4 @@
-
-/*window.onload = function (){
+window.onload = function (){
     GetYear()
     
 }
@@ -11,10 +10,10 @@ function GetYear(){
     var lastMod = document.lastModified;
     document.getElementById("lastModified").innerHTML = "Last Modified: " + lastMod;
 }
-*/
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
+
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
