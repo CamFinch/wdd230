@@ -54,68 +54,7 @@ nav a:hover{
     
 }
 
-#menu {
-    position: absolute;
-    top: 7%;
-    right: 10%;
-}
 
-
-@media (max-width: 800px){
-    nav ul{
-        display: none;
-    }
-
-    main{
-        display: block;
-        margin: auto;
-        padding: 10px;
-        
-    }
-
-    
-    
-    
-    iframe {
-        margin: auto;
-        padding: 15px;
-        border: none;
-        height: 240px;
-        width: 370px;
-    }
-
-    .open li {
-        display: block;
-    
-    }
-    .open li a {
-        display: block;
-    }
-
-    
-}
-
-@media (min-width: 600px){
-    nav ul{
-        display: flex;
-    }
-    nav ul li{
-        flex: 1 1 100%;
-        place-items: center;
-    }
-    iframe {
-        margin: auto;
-        padding: 15px;
-        border: none;
-        height: 500px;
-        width: 700px;
-    }
-    #menu {
-        display: none;
-    }
- 
-
-}
 main .container-1 h2{
     font-family: 'Bebas Neue', sans-serif;
     padding: 20px;
@@ -182,11 +121,67 @@ footer{
 }
 
 
-
-.open li {
-    display: block;
-
+#menu {
+    display: none;
 }
-.open li a {
-    display: block;
+
+
+@media (max-width: 700px){
+    #menu {
+        display: block;
+        position: absolute;
+        top: 7%;
+        right: 10%;
+    }
+    nav ul{
+        display: none;
+    }
+
+    main{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        
+    }
+
+    
+    
+    
+    iframe {
+        margin: auto;
+        padding: 15px;
+        border: none;
+        height: 240px;
+        width: 370px;
+    }
+
+    .navigation.open{
+        display: block;
+    
+    }
+
+
+    
+}
+
+@media (min-width: 600px){
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        flex: 1 1 100%;
+        place-items: center;
+    }
+    iframe {
+        margin: auto;
+        padding: 15px;
+        border: none;
+        height: 500px;
+        width: 700px;
+    }
+    #menu {
+        display: none;
+    }
+ 
+
 }
