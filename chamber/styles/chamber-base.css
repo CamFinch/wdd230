@@ -1,0 +1,391 @@
+html{
+    margin: 20px 30px;
+    
+}
+h1, h2, h3, h4{
+    color: #a95206;
+}
+header{
+    height: 130px;
+    width: 100%;
+    
+}
+
+header h1{
+    margin-left: 10px;
+}
+
+
+
+header h1, .member-nav, #logo-img{
+    display: inline;
+    margin: 30px 30px;
+}
+
+header #logo-img{
+    margin: 20px 20px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+header .member-nav{
+   margin-left: 200px;
+   
+
+}
+
+header .member-nav a{
+    text-decoration: none;
+    color: #606c38;
+    font-size: larger;
+
+}
+
+header .member-nav img {
+    top: 10px;
+    position: relative;
+    padding-left: 5px;
+}
+
+header .main-nav{
+    text-align: center;
+    padding-top: 13px;
+    
+}
+header .main-nav li{
+    display: inline;
+    padding: 20px;
+    margin-right: 50px;  
+}
+
+header .main-nav li a{
+    color: #606c38;
+    text-decoration: none;
+    font-size: larger;
+}
+
+header .main-nav li a:hover{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-img{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-img img{
+    height: 380px;
+    width: 1040px;
+    box-shadow: 5px 5px;
+}
+
+.hero-img button{
+    height: 40px;
+    width: 70px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 350px;
+    right: 400px;
+    background-color: #d4ae83;
+    color: #a95206;
+    border: 1px solid black;
+    box-shadow: 5px 5px;
+    
+}
+
+.block-section{
+    display: flex;
+    
+}
+
+.current-events{
+    border: 2px solid black;
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+    background-color: #d4ae83;
+    box-shadow: 10px 10px;
+    
+}
+
+.current-events h3, h5, p{
+    margin: 20px 20px;
+}
+
+.current-events p{
+    font-size: small;
+}
+
+.weather{
+    border: 2px solid black;
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #d4ae83;
+    box-shadow: 10px 10px;
+
+}
+
+.weather h3{
+    margin: 20px 20px;
+}
+
+.member-info{
+    border: 2px solid black;
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #d4ae83;
+    box-shadow: 10px 10px;
+}
+
+.member-info h3, p{
+    margin: 20px 20px;
+}
+
+.member-info p {
+    font-size: small;
+}
+
+.spotlight-selection{
+    display: flex;
+}
+.spotlight{
+    border: 2px solid black;
+    text-align: center;
+    height: 120px;
+    width: 1085px;
+    margin-top: 20px;
+    background-color: #d4ae83;
+    box-shadow: 10px 10px;
+}
+
+.spotlight h4{
+    padding: 200px;
+    display: inline;
+}
+
+.spotlight:hover {
+    height: 300px;
+}
+
+
+footer{
+    border: 2px solid black;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #d4ae83;
+    box-shadow: 10px 10px;
+    width: 1085px;
+}
+
+.footer-selection{
+    display: flex;
+}
+
+#menu{
+    display: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: block;
+        position: absolute;
+        top: 7%;
+        right: 10%;
+    }
+    h1, h2, h3, h4{
+        color: #a95206;
+    }
+    header{
+        height: 130px;
+        width: 100vw;
+        
+    }
+    
+    header h1{
+        margin-left: 10px;
+    }
+    
+    
+    
+    header h1, .member-nav, #logo-img{
+        display: inline;
+        margin: 30px 30px;
+    }
+    
+    header #logo-img{
+        margin: 20px 20px;
+        position: relative;
+        top: 30px;
+        left: 20px;
+    }
+    
+    header .member-nav{
+       text-align: center;
+       
+    
+    }
+    
+    header .member-nav a{
+        text-decoration: none;
+        color: #606c38;
+        font-size: larger;
+    
+    }
+    
+    header .member-nav img {
+        top: 10px;
+        position: relative;
+        padding-left: 5px;
+    }
+    
+    header .main-nav{
+        text-align: center;
+        padding-top: 13px;
+        display: none;
+        
+        
+    }
+    header .main-nav li{
+        display: inline;
+        padding: 10px;
+        
+    }
+    
+    header .main-nav li a{
+        color: #606c38;
+        text-decoration: none;
+        font-size: larger;
+    }
+    
+    header .main-nav li a:hover{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    header .main-nav.open{
+        display: inline;
+    }
+    
+    .hero-img{
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    
+    .hero-img img{
+        height: 200px;
+        width: 90vw;
+        box-shadow: 5px 5px;
+    }
+    
+    .hero-img button{
+        height: 40px;
+        width: 70px;
+        border-radius: 20px;
+        position: relative;
+        bottom: 350px;
+        right: 400px;
+        background-color: #d4ae83;
+        color: #a95206;
+        border: 1px solid black;
+        box-shadow: 5px 5px;
+        
+    }
+    
+    .block-section{
+        display: flex;
+        
+    }
+    
+    .current-events{
+        border: 2px solid black;
+        width: 350px;
+        height: 250px;
+        margin-top: 20px;
+        background-color: #d4ae83;
+        box-shadow: 10px 10px;
+        
+    }
+    
+    .current-events h3, h5, p{
+        margin: 20px 20px;
+    }
+    
+    .current-events p{
+        font-size: small;
+    }
+    
+    .weather{
+        border: 2px solid black;
+        width: 350px;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: #d4ae83;
+        box-shadow: 10px 10px;
+    
+    }
+    
+    .weather h3{
+        margin: 20px 20px;
+    }
+    
+    .member-info{
+        border: 2px solid black;
+        width: 350px;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: #d4ae83;
+        box-shadow: 10px 10px;
+    }
+    
+    .member-info h3, p{
+        margin: 20px 20px;
+    }
+    
+    .member-info p {
+        font-size: small;
+    }
+    
+    .spotlight{
+        border: 2px solid black;
+        text-align: center;
+        height: 120px;
+        width: 1085px;
+        margin-top: 20px;
+        background-color: #d4ae83;
+        box-shadow: 10px 10px;
+    }
+    
+    .spotlight h4{
+        padding: 200px;
+        display: inline;
+    }
+
+    
+    footer{
+        border: 2px solid black;
+        margin-top: 20px;
+        text-align: center;
+        background-color: #d4ae83;
+        box-shadow: 10px 10px;
+        width: 1085px;
+    }
+    
+    
+}
