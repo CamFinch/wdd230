@@ -151,11 +151,14 @@ header .main-nav li a:hover{
     font-size: small;
 }
 
+.spotlight-selection{
+    display: flex;
+}
 .spotlight{
     border: 2px solid black;
     text-align: center;
     height: 120px;
-    width: 1080px;
+    width: 1085px;
     margin-top: 20px;
     background-color: #d4ae83;
     box-shadow: 10px 10px;
@@ -165,52 +168,11 @@ header .main-nav li a:hover{
     padding: 200px;
     display: inline;
 }
-.hidden{
-    display: flex;
-    text-align: center;
-}
-.company1-hide{
-    display: none;
-    height: 200px;
-    width: 350px;
-    margin-top: 20px;
-    background-color: #d4ae83;
-    box-shadow: 10px 10px;
-    margin-left: 120px;
+
+.spotlight:hover {
+    height: 300px;
 }
 
-.company1-hide h5{
-    color: #a95206;
-    font-size: larger;
-}
-
-.company1-hide p{
-    font-size: small;
-}
-
-.company2-hide{
-    display: none;
-    height: 200px;
-    width: 350px;
-    margin-top: 20px;
-    background-color: #d4ae83;
-    box-shadow: 10px 10px;
-    margin-left: 140px;
-}
-
-.company2-hide h5 {
-    color: #a95206;
-    font-size: larger;
-}
-
-.company2-hide p{
-    font-size: small;
-}
-
-#company1:hover + .company1-hide{
-    display: block;
-    cursor: pointer;
-}
 
 footer{
     border: 2px solid black;
@@ -218,11 +180,32 @@ footer{
     text-align: center;
     background-color: #d4ae83;
     box-shadow: 10px 10px;
-    width: 1080px;
+    width: 1085px;
 }
 
+.footer-selection{
+    display: flex;
+}
+
+#menu{
+    display: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
 
 @media (max-width: 768px) {
+    #menu {
+        display: block;
+        position: absolute;
+        top: 7%;
+        right: 10%;
+    }
     h1, h2, h3, h4{
         color: #a95206;
     }
@@ -251,7 +234,7 @@ footer{
     }
     
     header .member-nav{
-       margin-left: 200px;
+       text-align: center;
        
     
     }
@@ -272,12 +255,14 @@ footer{
     header .main-nav{
         text-align: center;
         padding-top: 13px;
+        display: none;
+        
         
     }
     header .main-nav li{
         display: inline;
-        padding: 20px;
-        margin-right: 50px;  
+        padding: 10px;
+        
     }
     
     header .main-nav li a{
@@ -289,6 +274,10 @@ footer{
     header .main-nav li a:hover{
         font-size: 20px;
         font-weight: bold;
+    }
+
+    header .main-nav.open{
+        display: inline;
     }
     
     .hero-img{
@@ -377,7 +366,7 @@ footer{
         border: 2px solid black;
         text-align: center;
         height: 120px;
-        width: 85vw;
+        width: 1085px;
         margin-top: 20px;
         background-color: #d4ae83;
         box-shadow: 10px 10px;
@@ -387,52 +376,7 @@ footer{
         padding: 200px;
         display: inline;
     }
-    .hidden{
-        display: flex;
-        text-align: center;
-    }
-    .company1-hide{
-        display: none;
-        height: 200px;
-        width: 350px;
-        margin-top: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-        margin-left: 120px;
-    }
-    
-    .company1-hide h5{
-        color: #a95206;
-        font-size: larger;
-    }
-    
-    .company1-hide p{
-        font-size: small;
-    }
-    
-    .company2-hide{
-        display: none;
-        height: 200px;
-        width: 350px;
-        margin-top: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-        margin-left: 140px;
-    }
-    
-    .company2-hide h5 {
-        color: #a95206;
-        font-size: larger;
-    }
-    
-    .company2-hide p{
-        font-size: small;
-    }
-    
-    #company1:hover + .company1-hide{
-        display: block;
-        cursor: pointer;
-    }
+
     
     footer{
         border: 2px solid black;
@@ -440,7 +384,7 @@ footer{
         text-align: center;
         background-color: #d4ae83;
         box-shadow: 10px 10px;
-        width: 85vw;
+        width: 1085px;
     }
     
     

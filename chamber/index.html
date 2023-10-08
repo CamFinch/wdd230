@@ -23,6 +23,7 @@
             <a href="#">BECOME A MEMBER!</a>
             <a href="#""><img src="/chamber/images/profile.png" alt="profile" height="40" width="40"></a>
         </nav>
+        <button id="menu"></button>
         <nav class="main-nav">
             <ul>
                 <li><a href="#">HOME</a></li>
@@ -32,11 +33,14 @@
             </ul>
         </nav>
     </header>
+    
     <main>
-        <section class="hero-img">
-            <img src="/chamber/images/farmiingtonnm.jpeg" alt="hero-img" >
-            <button type="button" id="join-btn">JOIN</button>
-        </section>
+        <div clas="hero-selection">
+            <section class="hero-img">
+                <img src="/chamber/images/farmiingtonnm.jpeg" alt="hero-img" >
+                <button type="button" id="join-btn">JOIN</button>
+            </section>
+        </div>
         <div class="block-section">
             <section class="current-events">
                 <h3>EVENTS</h3>
@@ -54,29 +58,24 @@
                 <p>REMINDERS</p>
             </section>
         </div>
-        <section class="spotlight">
-            <h3>SPOTLIGHT</h3>
-            <h4 id="company1">COMPANY 1</h4>
-            <h4 id="company2">COMPANY 2</h4>
-        </section>
-        <section class="hidden">
-            <div class="company1-hide">
-                <h5>COMPANY 1</h5>
-                <p>COMPANY 1 INFO</p>
+        <div class="spotlight-selection">
+            <div class="spotlight">
+                <h3>SPOTLIGHT</h3>
+                <h4 id="company1">COMPANY 1</h4>
+                <h4 id="company2">COMPANY 2</h4>
             </div>
-            <div class="company2-hide">
-                <h5>COMPANY 2</h5>
-                <p>COMPANY 2 INFO</p>
-            </div>
-        </section>
+        </div>
+        <div class="footer-selection">
+            <footer>
+                <p>WDD 230 - Web Fronted Development Project</p>
+                <p>
+                    ©<span id="full-year"></span> <br> Cameron Finch <br> New Mexico
+                </p>
+                <p id="lastModified">
+            </footer>
+        </div>
+
     </main>
 
-    <footer>
-        <p>WDD 230 - Web Fronted Development Project</p>
-        <p>
-            ©<span id="full-year"></span> <br> Cameron Finch <br> New Mexico
-        </p>
-        <p id="lastModified">
-    </footer>
 </body>
 </html>
