@@ -1,6 +1,7 @@
 window.onload = function (){
     GetYear()
     
+    
 }
 
 function GetYear(){
@@ -17,5 +18,13 @@ function GetYear(){
     hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
-});
+    });
+
+    const body = document.querySelector('body');
+    const toggleSwitch = document.querySelector('#togglSwitch');
+
+    toggleSwitch.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+    })
+
 }
