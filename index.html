@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img src="images/IMG_6449.jpeg" height="130" width="70">
+        <img src="images/IMG_6449.webp" height="130" width="70">
         <h1>CAMERON FINCH</h1>
     </header>
     <button id="menu"></button>
@@ -33,6 +33,18 @@
         </ul>
     </nav>
     <main>
+        <div class="hero-img">
+            <picture>
+            <!--<img srcset="images/mttimpanogostemple.webp 360w, images/mttimpanogostemple.webp 800w"/>-->
+            <source media="(max-width: 400px)" srcset="images/mttimpanogostemplesmall.webp">
+            <source media="(min-width: 900px)" srcset="images/mttimpanogostempleslarge.webp">
+            <img src="images/mttimpanogostemple.webp" >
+            </picture>
+        </div>
+        <div class="hero-label">
+            <p>Mount Timponogos Utah Temple</p>
+        </div>
+
         <div class="container-1">
             <h2>WDD 230: Web Frontend Development</h2>
             <section class="card">
