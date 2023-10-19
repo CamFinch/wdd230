@@ -38,6 +38,14 @@ body.dark-mode{
 }
 
 
+.display{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20%;
+    margin: 20px 20px;
+}
+
+
 
 .switch {
     position: relative;
@@ -123,6 +131,7 @@ header .member-nav img {
 header .main-nav{
     text-align: center;
     padding-top: 13px;
+
     
 }
 header .main-nav li{
@@ -200,7 +209,9 @@ header .main-nav li a:hover{
     box-shadow: 10px 10px;
 
 }
-
+.weather h4{
+    margin: 10px 20px;
+}
 .weather h3{
     margin: 20px 20px;
 }
@@ -219,8 +230,9 @@ header .main-nav li a:hover{
     margin: 20px 20px;
 }
 
-.member-info p {
-    font-size: small;
+
+#our-mission{
+    font-size: large;
 }
 
 .spotlight-selection{
@@ -229,20 +241,18 @@ header .main-nav li a:hover{
 .spotlight{
     border: 2px solid black;
     text-align: center;
-    height: 120px;
-    width: 1085px;
+    height: 270px;
+    width: 100%;
     margin-top: 20px;
     background-color: #d4ae83;
     box-shadow: 10px 10px;
+
 }
 
-.spotlight h4{
-    padding: 200px;
-    display: inline;
-}
-
-.spotlight:hover {
-    height: 300px;
+.spotlight-info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
 }
 
 
@@ -252,7 +262,7 @@ footer{
     text-align: center;
     background-color: #d4ae83;
     box-shadow: 10px 10px;
-    width: 1085px;
+    width: 100%;
 }
 
 .footer-selection{
@@ -271,462 +281,114 @@ footer{
     content: "X";
 }
 
-@media (max-width: 700px) {
+
+
+
+/* SMALL */
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    header{
+        text-align: center;
+    }
+    header h1{
+        font-size: 20px;
+        display: block;
+    }
+    .member-nav a{
+        display: inline-block;
+        position: relative;
+        right: 120px;
+    
+    }
+   
+    .member-nav img {
+        display: none;
+    }
+    .switch{
+        position: absolute;
+        top:9%;
+        left: 8%;
+    }
     #menu {
         display: block;
         position: absolute;
-        top: 7%;
+        top: 10%;
         right: 10%;
-    }
-    h1, h2, h3, h4{
-        color: #a95206;
-    }
-    header{
-        height: 130px;
-        width: 100vw;
-        
-    }
-    
-    header h1{
-        margin-left: 10px;
-    }
-    
-    
-    
-    header h1, .member-nav, #logo-img{
-        display: inline;
-        margin: 30px 30px;
-    }
-    
-    header #logo-img{
-        margin: 20px 20px;
-        position: relative;
-        top: 30px;
-        left: 20px;
-    }
-    
-    header .member-nav{
-       text-align: center;
-       
-    
-    }
-    
-    header .member-nav a{
-        text-decoration: none;
-        color: #606c38;
-        font-size: larger;
-    
-    }
-    
-    header .member-nav img {
-        top: 10px;
-        position: relative;
-        padding-left: 5px;
-    }
-    
-    header .main-nav{
-        text-align: center;
-        padding-top: 13px;
-        display: none;
-        
-        
-    }
-    header .main-nav li{
-        display: inline;
-        padding: 10px;
-        
-    }
-    
-    header .main-nav li a{
-        color: #606c38;
-        text-decoration: none;
-        font-size: larger;
-    }
-    
-    header .main-nav li a:hover{
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    header .main-nav.open{
-        display: inline;
-    }
-    
-    .hero-img{
-        text-align: center;
-        margin-top: 20px;
-        
-    }
-    
-    .hero-img img{
-        height: 200px;
-        width: 90vw;
-        box-shadow: 5px 5px;
-    }
-    
-    .hero-img button{
         height: 40px;
-        width: 70px;
-        border-radius: 20px;
-        position: relative;
-        bottom: 350px;
-        right: 400px;
-        background-color: #d4ae83;
-        color: #a95206;
-        border: 1px solid black;
-        box-shadow: 5px 5px;
-        
+        width: 50px;
     }
-    
-    .block-section{
-        display: flex;
-        
-    }
-    
-    .current-events{
-        border: 2px solid black;
-        width: 350px;
-        height: 250px;
-        margin-top: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-        
-    }
-    
-    .current-events h3, h5, p{
-        margin: 20px 20px;
-    }
-    
-    .current-events p{
-        font-size: small;
-    }
-    
-    .weather{
-        border: 2px solid black;
-        width: 350px;
-        height: 250px;
-        margin-top: 20px;
-        margin-left: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-    
-    }
-    
-    .weather h3{
-        margin: 20px 20px;
-    }
-    
-    .member-info{
-        border: 2px solid black;
-        width: 350px;
-        height: 250px;
-        margin-top: 20px;
-        margin-left: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-    }
-    
-    .member-info h3, p{
-        margin: 20px 20px;
-    }
-    
-    .member-info p {
-        font-size: small;
-    }
-    
-    .spotlight{
-        border: 2px solid black;
-        text-align: center;
-        height: 120px;
-        width: 1085px;
-        margin-top: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-    }
-    
-    .spotlight h4{
-        padding: 200px;
-        display: inline;
+    .main-nav nav{
+        display: none;
     }
 
-    
-    footer{
-        border: 2px solid black;
-        margin-top: 20px;
-        text-align: center;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-        width: 1085px;
+    .main-nav.open{
+        display: inline;
     }
-    
+ 
+   .block-section{
+    display: inline;
+   }
+
+   .hero-img img{
+    height: 150px;
+    width: 370px;
+   }
+
+   .hero-img button{
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    top: 36%;
+    left: 17%;
+   }
     
 }
 
 /* ------------------ MEDIUM ------------------ */
 
-@media (max-width: 1100px) {
 
-    html{
-        margin: 20px 30px;
-        
+
+
+@media (max-width: 1000px){
+    @media (min-width: 600px){
+        header {
+            text-align: center;
+        }
+        .hero-img{
+            margin-top: 40px;
+        }
+        .hero-img img{
+            height: 250px;
+            width: 670px;
+        }
+
+        .hero-img button {
+            position: absolute;
+            left: 15%;
+            top: 37%;
+        }
+        .member-nav{
+            text-align: center;
+            margin-right: 100px;
+        }
+
+       .display {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        margin: 10px 10px;
+       }
+       #windchill{
+        padding-bottom: 10px;
+
+       }
+
+
     }
-    
-    h1, h2, h3, h4{
-        color: #a95206;
-    }
-    header{
-        height: 130px;
-        width: 100%;
-        
-    }
-    
-    header h1{
-        margin-left: 10px;
-    }
-    
-    
-    
-    header h1, .member-nav, #logo-img{
-        display: inline;
-        margin: 30px 30px;
-    }
-    
-    header #logo-img{
-        margin: 20px 20px;
-        position: relative;
-        top: 30px;
-        left: 20px;
-    }
-    
-    body.dark-mode{
-        background: black;
-        color: white;
-    }
-    
-    
-    
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-      }
-      
-      /* Hide default HTML checkbox */
-      .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
-      
-      /* The slider */
-      .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
-      
-      .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
-      
-    
-      
-      input:focus + .slider {
-        box-shadow: 0 0 1px black;
-      }
-      
-      input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-      }
-    
-      
-    
-      .slider.round {
-        border-radius: 34px;
-      }
-      
-      .slider.round:before {
-        border-radius: 50%;
-      }
-    
-    
-    header .member-nav{
-       margin-left: 200px;
-       
-    
-    }
-    
-    header .member-nav a{
-        text-decoration: none;
-        color: #606c38;
-        font-size: larger;
-    
-    }
-    
-    header .member-nav img {
-        top: 10px;
-        position: relative;
-        padding-left: 5px;
-    }
-    
-    header .main-nav{
-        text-align: center;
-        padding-top: 13px;
-        
-    }
-    header .main-nav li{
-        display: inline;
-        padding: 20px;
-        margin-right: 50px;  
-    }
-    
-    header .main-nav li a{
-        color: #606c38;
-        text-decoration: none;
-        font-size: larger;
-    }
-    
-    header .main-nav li a:hover{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    .hero-img{
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    .hero-img img{
-        height: 380px;
-        width: 1040px;
-        box-shadow: 5px 5px;
-    }
-    
-    .hero-img button{
-        height: 40px;
-        width: 70px;
-        border-radius: 20px;
-        position: relative;
-        bottom: 350px;
-        right: 400px;
-        background-color: #d4ae83;
-        color: #a95206;
-        border: 1px solid black;
-        box-shadow: 5px 5px;
-        
-    }
-    
-    .block-section{
-        display: flex;
-        
-    }
-    
-    .current-events{
-        border: 2px solid black;
-        width: 350px;
-        height: 250px;
-        margin-top: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-        
-    }
-    
-    .current-events h3, h5, p{
-        margin: 20px 20px;
-    }
-    
-    .current-events p{
-        font-size: small;
-    }
-    
-    .weather{
-        border: 2px solid black;
-        width: 350px;
-        height: 250px;
-        margin-top: 20px;
-        margin-left: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-    
-    }
-    
-    .weather h3{
-        margin: 20px 20px;
-    }
-    
-    .member-info{
-        border: 2px solid black;
-        width: 350px;
-        height: 250px;
-        margin-top: 20px;
-        margin-left: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-    }
-    
-    .member-info h3, p{
-        margin: 20px 20px;
-    }
-    
-    .member-info p {
-        font-size: small;
-    }
-    
-    .spotlight-selection{
-        display: flex;
-    }
-    .spotlight{
-        border: 2px solid black;
-        text-align: center;
-        height: 120px;
-        width: 1085px;
-        margin-top: 20px;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-    }
-    
-    .spotlight h4{
-        padding: 200px;
-        display: inline;
-    }
-    
-    .spotlight:hover {
-        height: 300px;
-    }
-    
-    
-    footer{
-        border: 2px solid black;
-        margin-top: 20px;
-        text-align: center;
-        background-color: #d4ae83;
-        box-shadow: 10px 10px;
-        width: 1085px;
-    }
-    
-    .footer-selection{
-        display: flex;
-    }
-    
-    #menu{
-        display: none;
-    }
-    
 }

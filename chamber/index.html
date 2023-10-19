@@ -12,6 +12,7 @@
     <meta property="og:image" content="#" />
     <link rel="stylesheet" type="text/css" href="styles/chamber-base.css">
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
     <link rel="icon" href="images/favicon-32x32.png">
     <title>Chamber | Home</title>
 </head>
@@ -51,25 +52,40 @@
         <div class="block-section">
             <section class="current-events">
                 <h3>EVENTS</h3>
-                <h5>EVENT 1</h5>
-                <p>EVENT 1 INFO</p>
-                <h5>EVENT 2</h5>
-                <p>EVENT 2 INFO</p>
+                <h5>HALLOWEEN CARNIVAL</h5>
+                <p>DATE: OCTOBER 31 <br>LOCATION: MCGEE PARK</p>
+                <h5>MARATHON (BREAST CANCER AWARNESS)</h5>
+                <p>DATE: OCTOBER 26 <br>START: BERG PARK <br>TIME: 8:00</p>
             </section>
             <section class="weather">
                 <h3>WEATHER</h3>
-                
+                <h4 id="cityoutput">Farmington</h4>
+                <section class="display">
+                    <p id="temp">67</p>
+                    <p id="windchill"></p>
+                    <p id="wind">5</p>
+                    <p id="description">Cloudy</p>
+                    <img src="/chamber/images/cloudy.png" height="70" width="70" alt="sun">
+                  </section>
             </section>
             <section class="member-info">
-                <h3>MEMBER INFO</h3>
-                <p>REMINDERS</p>
+                <h3>OUR MISSION</h3>
+                <p id="our-mission">We work with government, business, and community partners to promote and develop a welcoming business environment, that helps grow the community.</p>
+                
             </section>
         </div>
         <div class="spotlight-selection">
             <div class="spotlight">
                 <h3>SPOTLIGHT</h3>
-                <h4 id="company1">COMPANY 1</h4>
-                <h4 id="company2">COMPANY 2</h4>
+                    <section class="spotlight-info">
+                    <div class="ffp">
+                        <h4 id="company1">FARMINGTON FAMILY PRACTICE</h4>
+                        <img src="/chamber/images/ffp.jpeg" height="100" width="100" alt="ffp logo" id="ffp-logo">
+                    </div>
+                    <div class="fcd">
+                        <h4 id="company2">FOUR CORNERS DENTAL</h4>
+                        <img src="/chamber/images/fcd.jpeg" height="100" width="100" alt="fcd logo" id="fcd-logo">                    </div>
+                </section>
             </div>
         </div>
         <div class="footer-selection">
