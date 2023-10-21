@@ -45,8 +45,17 @@
     <main>
         <div clas="hero-selection">
             <section class="hero-img">
-                <img src="images/farmiingtonnm.jpeg" alt="hero-img" >
-                <button type="button" id="join-btn">JOIN</button>
+                <picture>
+                    <!-- <img src="images/farmiingtonnm.jpeg" alt="hero-img" >
+                    <button type="button" id="join-btn">JOIN</button> -->
+                    <source media="(max-width: 500px)" srcset="images/wdd230-herosmall.jpeg">
+                    <source media="(max-width: 1000px)" srcset="images/wdd230-heromedium.jpeg">
+                    <source media="(min-width: 1100px)" srcset="images/wdd230-herolarge.jpeg">
+                    <img src="images/wdd230-herolarge.jpeg" >
+                    <label id="small-label">SMALL IMAGE</label>
+                    <label id="medium-label">MEDIUM IMAGE</label>
+                    <label id="large-label">LARGE IMAGE</label>
+                </picture>
             </section>
         </div>
         <div class="block-section">

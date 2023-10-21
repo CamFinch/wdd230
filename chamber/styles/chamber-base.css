@@ -176,6 +176,22 @@ header .main-nav li a:hover{
     
 }
 
+#small-label{
+    display: none;
+}
+
+#medium-label{
+    display: none;
+}
+#large-label{
+    position: absolute;
+    border: 1px solid black;
+    padding: 10px;
+    top: 31%;
+    left: 15%;
+    background-color: white;
+}
+
 .block-section{
     display: flex;
     
@@ -347,6 +363,23 @@ footer{
     top: 36%;
     left: 17%;
    }
+   #small-label{
+    position: absolute;
+    border: 1px solid black;
+    padding: 5px;
+    top: 35%;
+    left: 15%;
+    background-color: white;
+    display: block;
+    font-size: small;
+    }
+
+    #medium-label{
+        display: none;
+    }
+    #large-label{
+       display: none;
+    }
     
 }
 
@@ -388,6 +421,23 @@ footer{
         padding-bottom: 10px;
 
        }
+       #small-label{
+        display: none;
+        }
+    
+        #medium-label{
+            position: absolute;
+            border: 1px solid black;
+            padding: 5px;
+            top: 35%;
+            left: 17%;
+            background-color: white;
+            display: block;
+        }
+        #large-label{
+           display: none;
+        }
+        
 
 
     }
