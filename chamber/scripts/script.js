@@ -26,6 +26,9 @@ function GetYear(){
     toggleSwitch.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
     })
+    getNumVisits()
     getWindChill()
+
+    
     
 }
