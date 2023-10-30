@@ -28,6 +28,7 @@ function GetYear(){
     })
     getNumVisits()
     getWindChill()
+    lastVisited()
 
     
     
