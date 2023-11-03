@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+}
+form{
+    text-align: center;
+    border: 2px black solid;
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+    margin-top: 5%;
+
+}
+#username-input{
+    display: inline-block;
+    margin-top: 30%;
+    
+}
+#username-input label{
+    display: block;
+}
+#password-1{
+    display: inline-block;
+    margin-top: 10%;
+}
+#password-2{
+    display: inline-block;
+    margin-top: 10%;
+}
+#email-input{
+    display: inline-block;
+    margin-top: 10%;
+}
+#submit-btn{
+    display: inline-block;
+    margin-top: 10%;
+}
+#range-input{
+    display: inline-block;
+    margin-top: 10%;
+}

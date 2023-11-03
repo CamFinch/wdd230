@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Fronted Development, Cameron Finch, course assignment portal">
+    <meta name="author" content="Cameron Finch">
+    <meta property="og:title" content="WDD 230 - Web Fronted Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://camfinch.github.io/wdd230/" />
+    <meta property="og:image" content="#" />
+    <script src="scripts/getdates.js"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="cameronfavicon.ico">
+    <title>Form - WDD 230 - Web Frontend Development</title>
+</head>
+<header>
+    <img src="images/IMG_6449.webp" height="130" width="70">
+    <h1>CAMERON FINCH</h1>
+</header>
+<button id="menu"></button>
+<nav>
+    <ul class="navigation">
+        <li><a href="#">HOME</a>
+        <li><a href="lesson03/chamber-site-plan.html" >SITE PLAN</a>
+        <li><a href="chamber/" >CHAMBER</a>
+        <li><a href="https://www.byui.edu/">BYU-IDAHO</a>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng">SCRIPTURE</a>
+            
+    </ul>
+</nav>
+<body>
+    <form action="/record.html" method="get">
+        <div class="username">
+            <label for="#username-input">Username</label>
+            <input type="text" placeholder="Username" name="username-input" id="username-input"  required>
+        </div>
+        <div class="password">
+            <label for="#password-1">Password</label>
+            <input type="password" placeholder="Password" name="password-1" id="password-1" pattern="[A-Za-z0-9]{8}" required>
+
+        </div>
+        <div class="password-reenter">
+            <label for="#password-2">Password</label>
+            <input type="password" placeholder="Re-Enter Password" name="password-2" id="password-2" pattern="[A-Za-z0-9]{8}" required>
+            
+        </div>
+        <div class="email">
+            <label for="#email-input">Email</label>
+            <input type="email" placeholder="Email" name="email-input" id="email-input" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please Enter Valid Email" required>
+            
+        </div>
+        <div class="rate">
+            <label for="#range-input">Rate 1-10</label>
+            <input type="range" id="range-input" min="1" max="10" step="1">
+            
+        </div>
+        <div class="submit">
+            <button type="submit" id="submit-btn">Submit</button>
+        </div>
+    </form>
+    
+</body>
+<footer>
+    <p>
+        ©<span id="full-year"></span> <br> Cameron Finch <br> New Mexico
+    </p>
+    <p id="lastModified">
+
+    </p>
+</footer>
+</html>
