@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+form{
+    height: 500px;
+    width: 400px;
+    border: 2px solid black;
+    text-align: center;
+    margin-left: 350px;
+    margin-top: 50px;
+    background-color: #d4ae83;
+    box-shadow: 10px 10px;
+    margin-left: 50px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    
+
+}
+form label{
+   font-family: 'Play', sans-serif; 
+}
+
+form h2{
+    padding-top: 20px;
+}
+
+.benefits{
+    height: 500px;
+    width: 400px;
+    border: 2px solid black;
+    text-align: center;
+    margin-left: 350px;
+    margin-top: 50px;
+    background-color: #d4ae83;
+    box-shadow: 10px 10px;
+    margin-right: 900px;
+    grid-row-start: 1;
+    grid-column-start: 4;
+}
+
+
+.main-content{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50px 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+.contents{
+    text-align: center;
+}
+
+#first-name-id{
+    margin-top: 20px;
+}
+#last-name-id{
+    margin-top: 20px;
+}
+#title-id{
+    margin-top: 20px;
+    width: 190px;
+}
+
+#email-id{
+    margin-top: 20px;
+    width: 180px;
+}
+#phone-number-id{
+    margin-top: 20px;
+    width: 180px;
+}
+#business-id{
+    margin-top: 20px;
+    width: 135px;
+}
+#membership-input{
+    margin-top: 20px;
+    width: 95px;
+}
+#submit-btn{
+    margin-top: 20px;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #a95206;
+    color: white;
+    border: none;
+    
+}
+#business-description-id{
+    margin-top: 20px;
+    width: 135px;
+
+}
+
+
+
+
+/* SMALL */
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+
+    form{
+        height: 420px;
+        width: 300px;
+        border: 2px solid black;
+        text-align: center;
+        margin-left: 350px;
+        margin-top: 50px;
+        background-color: #d4ae83;
+        box-shadow: 10px 10px;
+        margin-left: 50px;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        
+    
+    }
+    form h2{
+        padding-top: 0px;
+    }
+    .benefits{
+        display: none;
+        height: 420px;
+        width: 300px;
+        border: 2px solid black;
+        text-align: center;
+        margin-left: 350px;
+        margin-top: 50px;
+        background-color: #d4ae83;
+        box-shadow: 10px 10px;
+        margin-right: 900px;
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+
+    .main-content{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 50px 100px 100px 100px 100px 100px 100px 100px 100px;
+    }
+
+
+    #first-name-id{
+        margin-top: 0px;
+    }
+    #last-name-id{
+        margin-top: 15px;
+    }
+    #title-id{
+        margin-top: 15px;
+        width: 190px;
+    }
+
+    #email-id{
+        margin-top: 15px;
+        width: 180px;
+    }
+    #phone-number-id{
+        margin-top: 15px;
+        width: 180px;
+    }
+    #business-id{
+        margin-top: 15px;
+        width: 135px;
+    }
+    #membership-input{
+        margin-top: 15px;
+        width: 95px;
+    }
+    #submit-btn{
+        margin-top: 15px;
+        height: 40px;
+        width: 80px;
+        border-radius: 20px;
+        background-color: #a95206;
+        color: white;
+        border: none;
+        
+    }
+    #business-description-id{
+        margin-top: 15px;
+        width: 135px;
+
+    }
+
+
+}
+
+
+
+
+
+
+/* ------------------ MEDIUM ------------------ */
+
+
+
+
+@media (max-width: 1000px){
+    @media (min-width: 600px){
+        form{
+            height: 420px;
+            width: 300px;
+            border: 2px solid black;
+            text-align: center;
+            margin-left: 350px;
+            margin-top: 50px;
+            background-color: #d4ae83;
+            box-shadow: 10px 10px;
+            margin-left: 50px;
+            grid-row-start: 1;
+            grid-column-start: 1;
+            
+        
+        }
+        form h2{
+            padding-top: 0px;
+        }
+        .benefits{
+            height: 420px;
+            width: 300px;
+            border: 2px solid black;
+            text-align: center;
+            margin-left: 350px;
+            margin-top: 50px;
+            background-color: #d4ae83;
+            box-shadow: 10px 10px;
+            margin-right: 900px;
+            grid-row-start: 1;
+            grid-column-start: 3;
+        }
+
+        .main-content{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 50px 100px 100px 100px 100px 100px 100px 100px 100px;
+        }
+
+
+        #first-name-id{
+            margin-top: 0px;
+        }
+        #last-name-id{
+            margin-top: 15px;
+        }
+        #title-id{
+            margin-top: 15px;
+            width: 190px;
+        }
+
+        #email-id{
+            margin-top: 15px;
+            width: 180px;
+        }
+        #phone-number-id{
+            margin-top: 15px;
+            width: 180px;
+        }
+        #business-id{
+            margin-top: 15px;
+            width: 135px;
+        }
+        #membership-input{
+            margin-top: 15px;
+            width: 95px;
+        }
+        #submit-btn{
+            margin-top: 15px;
+            height: 40px;
+            width: 80px;
+            border-radius: 20px;
+            background-color: #a95206;
+            color: white;
+            border: none;
+            
+        }
+        #business-description-id{
+            margin-top: 15px;
+            width: 135px;
+
+        }
+
+
+    }
+}
