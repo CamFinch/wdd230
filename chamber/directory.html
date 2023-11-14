@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="styles/chamber-base.css">
     <script src="scripts/script.js"></script>
     <script src="scripts/pagecounter.js"></script>
-    <script src="scripts/discover.js"></script>
+    <!-- <script src="scripts/discover.js"></script> -->
     <link rel="icon" href="images/favicon-32x32.png">
     <title>Chamber | Home</title>
 </head>
@@ -37,13 +37,52 @@
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="discover.html">DISCOVER</a></li>
-                <li><a href="#">DIRECTORY</a></li>
+                <li><a href="directory.html">DIRECTORY</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <div class="company-cards">
+    <script>
+        getCompanies();
+        
+        const cards = document.querySelector('.company-cards');
+        async function getCompanies(){
+            const response = await fetch('data/members.json');
+            const data = await response.json();
+            //console.log(data);
+            displayCompanies(data.companies);
+        }
+        const displayCompanies = (companies) => {
+            companies.forEach((companies) => {
+                let card = document.createElement('section');
+                let name = document.createElement('h3');
+                let address = document.createElement('p');
+                let phone = document.createElement('p');
+                let url = document.createElement('p');
+                let logo = document.createElement('img');
+                let member = document.createElement('p');
 
+                logo.setAttribute('src', companies.images);
+                logo.setAttribute('alt', ``); // fill in the blank
+                logo.setAttribute('loading', 'lazy');
+                logo.setAttribute('width', '340');
+                logo.setAttribute('height', '440');
+
+                card.appendChild(logo);
+                card.appendChild(name);
+                card.appendChild(address);
+
+                cards.appendChild(card);
+            
+
+            
+            
+        });
+    }
+
+        
+    </script>
+    <div class="company-cards">
     </div>
     
         <div class="footer-selection">
