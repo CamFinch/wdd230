@@ -139,6 +139,14 @@ footer{
     background-color: white;
 }
 
+.weather{
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin-left: 250px;
+}
+
 @media (min-width: 900px) {
     main{
         display: block;
@@ -168,9 +176,6 @@ footer{
         
     }
 
-    
-    
-    
     iframe {
         margin: auto;
         padding: 15px;
@@ -183,9 +188,6 @@ footer{
         display: block;
     
     }
-
-
-    
 }
 
 @media (max-width: 400px){

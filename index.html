@@ -11,6 +11,7 @@
     <meta property="og:url" content="https://camfinch.github.io/wdd230/" />
     <meta property="og:image" content="#" />
     <script src="scripts/getdates.js"></script>
+    <script src="scripts//weatherhome.js"></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="cameronfavicon.ico">
@@ -68,11 +69,53 @@
                 <h3>Information</h3>
         </section>
         </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d177415.07644054428!2d-108.21586487822746!3d36.71883905471103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695749651922!5m2!1sen!2sus"></iframe>
+        </div>
+        <div class="weather">
+            <h3>Weather</h3>
+            <p> Temp: <span id="temp"></span>
+            </p>
+            <img id="icon" src="" alt=""></img>
+            <p id="caption"></p>
+            <script>
+            const curtemp = document.querySelector('#temp');
+            const weathericon = document.querySelector('#icon');
+            const weathercaption = document.querySelector('#caption');
+    
+            const url = 'https://api.openweathermap.org/data/2.5/weather?lat=36.73157&lon=-108.21336&appid=726cb028fd26e8afc97d193f720b5cee';
+    
+            async function apiFetch(){
+                try{
+                    const response = await fetch(url);
+                    if(response.ok){
+                        const data = await response.json();
+                        console.log(data);
+                    } else{
+                        throw Error(await response.text());
+                    }
+                } catch(error){
+                    console.log(error);
+    
+                }
+            }
+    
+            apiFetch();
         
+            function displayWeather(data){
+                curtemp.innerHTML = `${data.main.temp}`;
+                const iconsrc = `https://openweathermap.org/img/w/${weather}.icon`;
+                let desc = data[0].description;
+                weathericon.setAttribute('height', 100);
+                weathericon.setAttribute('width', 100);
+                weathercaption.textContent = `${desc}`;
+            }
+            displayWeather();
+           
+            </script>
+        </div>
     </main>
-    <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d177415.07644054428!2d-108.21586487822746!3d36.71883905471103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695749651922!5m2!1sen!2sus"></iframe>
-    </div>
+
     <footer>
         <p>
             ©<span id="full-year"></span> <br> Cameron Finch <br> New Mexico
