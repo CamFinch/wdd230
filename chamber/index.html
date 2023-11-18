@@ -12,14 +12,31 @@
     <meta property="og:image" content="#" />
     <link rel="stylesheet" type="text/css" href="styles/chamber-base.css">
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/pagecounter.js"></script>
+
     <link rel="icon" href="images/favicon-32x32.png">
     <title>Chamber | Home</title>
 </head>
 <body>
-    
+    <section class="banner">
+        <h2>Chamber Of Commerce Meet And Greet!</h2>
+        <h4>Come Join Us For A Meet And Greet Wednesday At <span id="underlinetime">7:00PM</span>!</h4>
+        <script>
+            var date = new Date();
+            const banner = document.querySelector('.banner');
+            const today = date.getDay();
+            console.log(today);
+            /*1 monday 3 wednesday 5 friday   */
+            if(date.getDay() == 1 || 3 || 5){
+               banner.style.display = "block";
+            }
+
+
+        </script>
+    </section>
     <header>
+
+    
         
         <h1>Farmington Chamber of Commerce</h1>
         <nav class="member-nav">
@@ -71,11 +88,85 @@
                 <h3>WEATHER</h3>
                 <h4 id="cityoutput">Farmington</h4>
                 <section class="display">
-                    <p id="temp">67</p>
-                    <p id="windchill"></p>
-                    <p id="wind">5</p>
-                    <p id="description">Cloudy</p>
-                    <img src="images/cloudy.png" height="70" width="70" alt="sun">
+                    <div class="day-weather">
+                        <p id="weather-header">Today's Weather</p>
+                        <p id="temp"></p>
+                        <img id="icon" src="" height="70" width="70" alt="">
+                        <p id="description"></p>
+                        <script>
+                            const curtemp = document.querySelector('#temp');
+                            const weathericon = document.querySelector('#icon');
+                            const weathercaption = document.querySelector('#description');
+
+                            const url1 = 'https://api.openweathermap.org/data/2.5/weather?lat=36.73157&lon=-108.21336&units=imperial&appid=726cb028fd26e8afc97d193f720b5cee';
+                            
+        
+                            async function apiFetch(){
+                                try{
+                                    const response = await fetch(url1);
+                                    if(response.ok){
+                                        const data = await response.json();
+                                        console.log(data);
+                                        displayWeather(data);
+                                    } else{
+                                        throw Error(await response.text());
+                                    }
+                                } catch(error){
+                                    console.log(error);
+        
+                                }
+                            }
+        
+        
+                            apiFetch();
+                            
+            
+                            function displayWeather(data){
+                                curtemp.innerHTML = `${data.main.temp}&deg;F`;
+                                const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+                                let desc = data.weather[0].description;
+                                weathericon.setAttribute('src', iconsrc);
+                                weathericon.setAttribute('width', 50);
+                                weathercaption.innerHTML = `${desc}`;
+                            }
+
+
+                        </script>
+                    </div>
+                    <div class="forecast">
+                        <p id="forecast-header">3 Day Forecast</p>
+                        <p>1. <span id="fore1"></span></p>
+                        <p>2. <span id="fore2"></span></p>
+                        <p>3. <span id="fore3"></span></p>
+                        <script>
+                            const forecast1 = document.getElementById("fore1");
+                            const forecast2 = document.getElementById("fore2");
+                            const forecast3 = document.getElementById("fore3");
+                            const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=36.73157&lon=-108.21336&units=imperial&appid=726cb028fd26e8afc97d193f720b5cee';
+                            async function apiFetch2(){
+                                try{
+                                    const response = await fetch(url);
+                                    if(response.ok){
+                                        const data = await response.json();
+                                        console.log(data);
+                                        displayForecast(data);
+                                    } else{
+                                        throw Error(await response.text());
+                                    }
+                                } catch(error){
+                                    console.log(error);
+
+                                }
+                            }
+                            apiFetch2();
+
+                            function displayForecast(data){
+                                forecast1.innerHTML = `${data.list[1].main.temp}&deg;F`;
+                                forecast2.innerHTML = `${data.list[2].main.temp}&deg;F`;
+                                forecast3.innerHTML = `${data.list[3].main.temp}&deg;F`; 
+                            }
+                        </script>
+                    </div>
                   </section>
             </section>
             <section class="member-info">

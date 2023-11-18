@@ -187,7 +187,7 @@ header .main-nav li a:hover{
     position: absolute;
     border: 1px solid black;
     padding: 10px;
-    top: 31%;
+    top: 48%;
     left: 15%;
     background-color: white;
 }
@@ -226,11 +226,32 @@ header .main-nav li a:hover{
 
 }
 .weather h4{
-    margin: 10px 20px;
+    margin: 0px 20px;
+
 }
 .weather h3{
-    margin: 20px 20px;
+    margin: 10px 20px;
 }
+#forecast-header{
+    text-decoration: underline;
+    font-size: large;
+}
+#weather-header{
+    text-decoration: underline;
+    font-size: 17px;
+    margin-top: 21px;
+}
+
+#temp{
+    margin-bottom: -10px;
+
+}
+
+#icon{
+    margin-bottom: -35px;
+    margin-left: 20px;
+}
+
 
 .member-info{
     border: 2px solid black;
@@ -422,6 +443,21 @@ footer{
     grid-column-end: 12;
     margin-top: 30px;
 }
+.banner{
+    height: 100px;
+    width: auto;
+    border: 2px solid black;
+    text-align: center;
+    background-color: #d4ae83 ;
+    display: hidden;
+    
+}
+.banner span{
+    text-decoration: underline;
+}
+
+
+
 
 
 
@@ -493,7 +529,7 @@ footer{
     position: absolute;
     border: 1px solid black;
     padding: 5px;
-    top: 35%;
+    top: 60%;
     left: 15%;
     background-color: white;
     display: block;
@@ -505,6 +541,30 @@ footer{
     }
     #large-label{
        display: none; 
+    }
+
+    #forecast-header{
+        text-decoration: underline;
+        font-size: large;
+    }
+    #weather-header{
+        text-decoration: underline;
+        font-size: 17px;
+        margin-top: 21px;
+    }
+    
+    #temp{
+        margin-bottom: -10px;
+    
+    }
+    
+    #icon{
+        margin-bottom: -35px;
+        margin-left: 20px;
+    }
+
+    .banner{
+        height: 140px;
     }
     
 }
@@ -555,7 +615,7 @@ footer{
             position: absolute;
             border: 1px solid black;
             padding: 5px;
-            top: 35%;
+            top: 55%;
             left: 17%;
             background-color: white;
             display: block;
@@ -564,6 +624,39 @@ footer{
            display: none;
         }
         
+        #forecast-header{
+            text-decoration: underline;
+            font-size: large;
+        }
+        #weather-header{
+            text-decoration: underline;
+            font-size: 17px;
+            margin-top: 21px;
+        }
+        
+        #temp{
+            margin-bottom: -10px;
+        
+        }
+        
+        #icon{
+            margin-bottom: -35px;
+            margin-left: 20px;
+        }
+
+        #fore1{
+            font-size: small;
+    
+        }
+        #fore2{
+            font-size: small;
+        }
+        #fore3{
+            font-size: small;
+        }
+        .forecast p{
+            font-size: small;
+        }
 
 
     }

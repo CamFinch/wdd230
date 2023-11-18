@@ -27,7 +27,6 @@ function GetYear(){
         body.classList.toggle('dark-mode');
     })
     getNumVisits();
-    getWindChill();
     lastVisited();
     getTimeStamp();
     getCompanies();
