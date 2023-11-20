@@ -4,57 +4,57 @@
             "name": "Zia Media",
             "address": "754 W Main St. Farmington, NM 87401",
             "phone": "505-608-5133",
-            "weburl": "http://.com",
-            "images": "image.jpeg",
+            "weburl": "http://ziamedia.com",
+            "images": "./images/zia.jpeg",
             "memberlevel": "Bronze" 
         },
         {
             "name": "The UPS Store",
             "address": "5532 E Main St. Farmington, NM 87401",
             "phone": "505-326-6311",
-            "weburl": "http://.com",
-            "images": "image.jpeg",
-            "memberlevel": "Bronze" 
+            "weburl": "http://upsfarmington.com",
+            "images": "./images/ups.png",
+            "memberlevel": "Gold" 
         },
         {
             "name": "Farmington Family Practice",
             "address": "3245 Maple St. Farmington, NM 87401",
             "phone": "505-623-8932",
-            "weburl": "http://.com",
-            "images": "image.jpeg",
-            "memberlevel": "Bronze" 
+            "weburl": "http://ffp.com",
+            "images": "./images/ffp.png",
+            "memberlevel": "Gold" 
         },
         {
             "name": "Staples",
             "address": "3543 E Main St. Farmington, NM 87401",
             "phone": "505-327-1222",
-            "weburl": "http://.com",
-            "images": "image.jpeg",
-            "memberlevel": "Bronze" 
+            "weburl": "http://staplesfarmingtonnm.com",
+            "images": "./images/staples.png",
+            "memberlevel": "Silver" 
         },
         {
             "name": "San Juan Signs",
             "address": "234 E. Main St. Farmington, NM 87401",
             "phone": "505-326-5551",
-            "weburl": "http://.com",
-            "images": "image.jpeg",
+            "weburl": "http://sanjuansigns.com",
+            "images": "./images/sanjuansigns.jpeg",
             "memberlevel": "Bronze" 
         },
         {
             "name": "Coca-Cola Bottling Co.",
             "address": "123 E. Miller St. Farmington, NM 87401",
             "phone": "505-637-2655",
-            "weburl": "http://.com",
-            "images": "image.jpeg",
-            "memberlevel": "Bronze" 
+            "weburl": "http://cocacolafarmington.com",
+            "images": "./images/cocacola.png",
+            "memberlevel": "Silver" 
         },
         {
             "name": "Kirtland Reality",
             "address": "234 Road 6111 Kirtland, NM 87417",
             "phone": "505-598-6811",
-            "weburl": "http://.com",
-            "images": "image.jpeg",
-            "memberlevel": "Bronze" 
+            "weburl": "http://kirtlandreality.com",
+            "images": "./images/kirtlandreality.jpeg",
+            "memberlevel": "Silver" 
         }
     
     ]

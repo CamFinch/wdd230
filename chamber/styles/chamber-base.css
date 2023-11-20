@@ -300,10 +300,12 @@ footer{
     background-color: #d4ae83;
     box-shadow: 10px 10px;
     width: 100%;
+    
 }
 
 .footer-selection{
     display: flex;
+    
 }
 
 #menu{
@@ -458,7 +460,10 @@ footer{
 
 
 
+.company-cards{
+    text-align: center;
 
+}
 
 
 

@@ -17,7 +17,7 @@
     <link rel="icon" href="images/favicon-32x32.png">
     <title>Chamber | Home</title>
 </head>
-<body>
+
     
     <header>
         
@@ -35,68 +35,83 @@
         <button id="menu"></button>
         <nav class="main-nav">
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="discover.html">DISCOVER</a></li>
                 <li><a href="directory.html">DIRECTORY</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="join.html">JOIN</a></li>
             </ul>
         </nav>
     </header>
-    <script>
-        getCompanies();
-        
-        const cards = document.querySelector('.company-cards');
-        async function getCompanies(){
-            const response = await fetch('data/members.json');
-            const data = await response.json();
-            //console.log(data);
-            displayCompanies(data.companies);
+    <body>
+        <script>
+            getCompanies();
+            
+            const cards = document.querySelector('.company-cards');
+            async function getCompanies(){
+                const response = await fetch('data/members.json');
+                const data = await response.json();
+                console.log(data);
+                displayCompanies(data.companies);
+            }
+            const displayCompanies = (companies) => {
+                companies.forEach((company) => {
+                    let card = document.createElement("DIV");
+                    let companyName = document.createElement("h3");
+                    let companyAddress = document.createElement('p');
+                    let companyPhone = document.createElement('p');
+                    let companyUrl = document.createElement('p');
+                    let companyLogo = document.createElement('img');
+                    let companyMember = document.createElement('p');
+
+                    companyName.textContent = `${company.name}`;
+                    companyAddress.textContent = `${company.address}`;
+                    companyPhone.textContent = `${company.phone}`;
+                    companyUrl.textContent = `${company.weburl}`;
+                    companyMember.textContent = `${company.memberlevel}`;
+                    card.setAttribute("class", "company-cards");
+                    card.appendChild(companyName);
+                    card.appendChild(companyAddress);
+                    card.appendChild(companyPhone);
+                    card.appendChild(companyUrl);
+                    card.appendChild(companyMember);
+
+                    
+                    companyLogo.setAttribute('src', company.images);
+                    companyLogo.setAttribute('alt', ``); 
+                    companyLogo.setAttribute('loading', 'lazy');
+                    companyLogo.setAttribute('width', '200');
+                    companyLogo.setAttribute('height', '200');
+
+                    card.appendChild(companyLogo);
+                    document.body.appendChild(card);
+
+                
+
+                
+                
+            });
+            
         }
-        const displayCompanies = (companies) => {
-            companies.forEach((companies) => {
-                let card = document.createElement('section');
-                let name = document.createElement('h3');
-                let address = document.createElement('p');
-                let phone = document.createElement('p');
-                let url = document.createElement('p');
-                let logo = document.createElement('img');
-                let member = document.createElement('p');
-
-                logo.setAttribute('src', companies.images);
-                logo.setAttribute('alt', ``); // fill in the blank
-                logo.setAttribute('loading', 'lazy');
-                logo.setAttribute('width', '340');
-                logo.setAttribute('height', '440');
-
-                card.appendChild(logo);
-                card.appendChild(name);
-                card.appendChild(address);
-
-                cards.appendChild(card);
-            
 
             
-            
-        });
-    }
+        </script>
 
-        
-    </script>
-    <div class="company-cards">
-    </div>
-    
-        <div class="footer-selection">
-            <footer>
-                <p>WDD 230 - Web Fronted Development Project</p>
-                <p>
-                    ©<span id="full-year"></span> <br> Cameron Finch <br> New Mexico
-                </p>
-                <p id="lastModified">
-                <p><span>Number Of Visits: </span><span id="numVisits"></span></p>
-            </footer>
-        </div>
+    </body>
+
+
 
     </main>
+    
+    <div class="footer-selection">
+        <footer>
+            <p>WDD 230 - Web Fronted Development Project</p>
+            <p>
+                ©<span id="full-year"></span> <br> Cameron Finch <br> New Mexico
+            </p>
+            <p id="lastModified">
+            <p><span>Number Of Visits: </span><span id="numVisits"></span></p>
+        </footer>
+    </div>
  
-</body>
+
 </html>
