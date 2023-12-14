@@ -1,0 +1,97 @@
+body{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.rental-agreement{
+padding-top: 30px;
+font-size: 20px;
+padding: 10px;
+}
+
+.form-class{
+    margin-left: 33%;
+    padding-top: 50px;
+}
+form{
+    border: 2px solid black;
+    height: 490px;
+    width: 360px;
+    text-align: center;
+  
+}
+
+footer{
+    padding-top: 50px;
+}
+
+#rental-date-id{
+
+    margin-top: 10px;
+    width: 170px;
+}
+
+#rental-period-id{
+    margin-top: 10px;
+    width: 160px;
+}
+
+#rental-type-id{
+    margin-top: 10px;
+    width: 125px;
+}
+
+#phonenumber-id{
+    margin-top: 10px;
+    width: 100px;
+}
+
+#first-name-id{
+    margin-top: 10px;
+    width: 130px;
+}
+
+#last-name-id{
+    margin-top: 10px;
+    width: 130px;
+}
+
+#email-id{
+    margin-top: 10px;
+    width: 167px;
+}
+
+#location-id{
+    margin-top: 10px;
+    width: 100px;
+}  
+
+#cruise-id{
+    margin-top: 10px;
+    width: 130px;
+}
+
+#accomadations-id{
+    margin-top: 10px;
+    width: 210px;
+    height: 40px;
+}
+
+#checkbox-id{
+    margin-top: 10px;
+
+}
+
+.check label{
+    font-size: 13px;
+}
+#sub{
+    margin-top: 15px;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    color: rgb(135, 206, 230);
+    background-color: white;
+    font-weight: bolder;
+}

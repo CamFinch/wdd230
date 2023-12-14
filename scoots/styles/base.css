@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Play&display=swap');
+
+:root{
+    color: rgb(135, 206, 230);
+    background: white;
+    font-family: 'Outfit', sans-serif;
+
+}
+body{
+    margin: 60px 60px 60px 60px;
+    
+}
+.weather-banner{
+    border: 2px solid black;
+}
+header{
+    text-align: center;
+}
+.navigation-home{
+ text-align: center;
+ padding: 30px;
+}
+.navigation-home a{
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(135, 206, 230);
+}
+.navigation-home a:hover{
+    font-size: 21px;
+    color: black;
+}
+.hero a{
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    top: 60%;
+    right: 70%;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(135, 206, 230);
+}
+.hero a:hover{
+    color: black;
+    transform: scale(110%);
+}
+.rental-types{
+    padding-top: 30px;
+    text-align: center;
+}
+.rental-types table, td, tr, th{
+    border: 1px solid black;
+}
+
+.weather{
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+
+footer{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.social-media a{
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.footer-contents{
+    padding-top: 30px;
+}

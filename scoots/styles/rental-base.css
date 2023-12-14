@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    margin-left: 22%;
+}
+h2{
+    margin-right: 22%;
+    padding-bottom: 40px;
+}
+nav{
+    margin-right: 22%;
+}
+h1{
+    margin-right: 22%;
+}
+
+
+.rental-table tr,td{
+    padding-top: 40px;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    justify-content: center;
+    
+}
+
+.rental-table img{
+    padding: 20px;
+}

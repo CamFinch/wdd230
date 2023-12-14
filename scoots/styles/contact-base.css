@@ -1,0 +1,94 @@
+body{
+    text-align: center;
+}
+
+form{
+    border: 2px solid black;
+    height: 350px;
+    width: 300px;
+    margin-left: 35.5%;
+    margin-top: 40px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.contact-contents{
+    margin-left: 13%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+}
+.contact-info{
+    border: 2px solid black;
+    height: 350px;
+    width: 300px;
+    margin-left: 35.5%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+.map1 iframe{ 
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+
+}
+
+.map1{
+    border: 2px solid black;
+    width: 300px;
+    height: 350px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.map2 iframe{
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+}
+.map2{
+    width: 300px;
+    height: 350px;
+    border: 2px solid black;
+    margin-top: 40px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#store-hours{
+    font-size: 15px;
+    text-decoration: underline;
+}
+#first-name-id{
+    margin-top: 13px;
+}
+
+#last-name-id{
+    margin-top: 13px;
+    width: 142px;
+}
+
+#email-id{
+    margin-top: 13px;
+    width: 178px;
+}
+
+#comment-id{
+    margin-top: 13px;
+    width: 223px;
+    height: 40px;
+}
+
+#sub{
+    margin-top: 15px;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    color: rgb(135, 206, 230);
+    background-color: white;
+    font-weight: bolder;
+}

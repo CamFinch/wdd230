@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Fronted Development, Cameron Finch, Final Project">
+    <meta name="author" content="Cameron Finch">
+    <meta property="og:title" content="WDD 230 - Web Fronted Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://camfinch.github.io/wdd230/" />
+    <meta property="og:image" content="#" />
+    <link rel="stylesheet" type="text/css" href="/scoots/styles/base.css">
+    <link rel="stylesheet" type="text/css" href="/scoots/styles/rental-base.css">
+    <script src="/scoots/scripts/script.js"></script>
+    <title>Scoots | Rentals</title>
+</head>
+<body>
+    <h1>COZUMEL SCOOTS</h1>
+    <nav class="navigation-home">
+        <a href="index.html">HOME</a>
+        <a href="rentals.html">RENTALS</a>
+        <a href="reservation.html">RESERVATIONS</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <h2>Rental Information</h2>
+    <div class="rental-info">
+        <script>
+            getRentals();
+            
+            const cards = document.querySelector('.rentals');
+            async function getRentals(){
+                const response = await fetch('data/rentals.json');
+                const data = await response.json();
+                console.log(data);
+                displayRentals(data.types);
+            }
+            const displayRentals = (types) => {
+                types.forEach((rental) => {
+                    let card = document.createElement('tr')
+                    let scootername = document.createElement('td');
+                    let maxpersons = document.createElement('td');
+                    let walkinhalfday = document.createElement('td');
+                    let walkinfullday = document.createElement('td');
+                    let reservehalfday = document.createElement('td');
+                    let reservefullday = document.createElement('td');
+                    let scooterimg = document.createElement('img');
+
+                    scootername.textContent = `${rental.name}`;
+                    maxpersons.textContent = `${rental.max}`;
+                    walkinhalfday.textContent = `${rental.price_walkin_halfday}`;
+                    walkinfullday.textContent = `${rental.price_walkin_fullday}`;
+                    reservehalfday.textContent = `${rental.price_reservation_halfday}`;
+                    reservefullday.textContent = `${rental.price_reservation_fullday}`;
+                    card.setAttribute("class", "rental-table");
+                    card.appendChild(scootername);
+                    card.appendChild(maxpersons);
+                    card.appendChild(walkinhalfday);
+                    card.appendChild(walkinfullday);
+                    card.appendChild(reservehalfday);
+                    card.appendChild(walkinfullday);
+
+                    
+                    scooterimg.setAttribute('src', rental.images);
+                    scooterimg.setAttribute('alt', ``); 
+                    scooterimg.setAttribute('loading', 'lazy');
+                    scooterimg.setAttribute('width', '150');
+                    scooterimg.setAttribute('height', '150');
+
+                    card.appendChild(scooterimg);
+                    document.body.appendChild(card);
+
+                
+
+                
+                
+            });
+            
+        }
+
+            
+        </script>
+
+    </div>
+
+</body>
+
+</html>

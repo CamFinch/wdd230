@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Fronted Development, Cameron Finch, Final Project">
+    <meta name="author" content="Cameron Finch">
+    <meta property="og:title" content="WDD 230 - Web Fronted Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://camfinch.github.io/wdd230/" />
+    <meta property="og:image" content="#" />
+    <link rel="stylesheet" type="text/css" href="/scoots/styles/base.css">
+    <link rel="stylesheet" type="text/css" href="/scoots/styles/reservation-base.css">
+    <script src="/scoots/scripts/script.js"></script>
+    <title>Scoots | Reservations</title>
+</head>
+<body>
+    <h1>COZUMEL SCOOTS</h1>
+    <nav class="navigation-home">
+        <a href="index.html">HOME</a>
+        <a href="rentals.html">RENTALS</a>
+        <a href="reservation.html">RESERVATIONS</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+<section class="rental-agreement">
+    <h3>Rental Services and Agreement</h3>
+    <p>
+        A $50 security deposit is required to confirm reservations<br>
+        A valid drivers license is required in hand at the time of rental<br>
+        No one under the age of 12 years of age are allowed to ride on the scooters<br>
+        Fuel charge is not included<br>
+        Unlimited mileage<br>
+        Liability insurance is included<br>
+        Damage insurance is available for purchase<br>
+        Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals<br>
+        Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo<br>
+        Rentals may be returned to either physical location<br>
+    </p>
+    
+</section>
+<section class="form-class">
+    <form action="thankyou.html" method="get">
+        <h3>Reservation Form</h3>
+        <div class="contents">
+            <div class="rental-date">
+                <label for="rental-date">Date</label>
+                <input type="text" placeholder="Date" name="rental-date" id="rental-date-id"  required>
+            </div>
+            <div class="period">
+                <label for="rental-period">Period</label>
+                <input type="text" placeholder="Period" name="rental-period" id="rental-period-id"  required>
+            </div>
+            <div class="rental-type">
+                <label for="rental-type">Rental Type</label>
+                <input type="text" placeholder="Rental Type" name="rental-type" id="rental-type-id"  required>
+            </div>
+            <div class="phonenumber">
+                <label for="phonenumber-id">Phone Number</label>
+                <input type="text" placeholder="Phone Number" name="phonenumber" id="phonenumber-id"  required>
+            </div>
+            <div class="first-name">
+                <label for="first-name-id">First Name</label>
+                <input type="text" placeholder="First Name" name="first-name" id="first-name-id"  required>
+            </div>
+            <div class="last-name">
+                <label for="last-name-id">Last Name</label>
+                <input type="text" placeholder="Last Name" name="last-name" id="last-name-id"  required>
+            </div>
+            <div class="email">
+                <label for="email-id">Email</label>
+                <input type="email" placeholder="Email" name="email" id="email-id"  required>
+            </div>
+            <div class="home-location">
+                <label for="location-id">Home Location</label>
+                <input type="text" placeholder="Home State/Country" name="home-location" id="location-id"  required>
+            </div>
+            <div class="cruise">
+                <label for="cruise-id">Cruise Line</label>
+                <input type="text" placeholder="Cruise Line" name="cruiseline" id="cruise-id">
+            </div>
+            <div class="accomadations">
+                
+                <input type="text" placeholder="Any Special Requests" name="accomadations" id="accomadations-id">
+            </div>
+            <div class="check">
+                <label for="checkbox-id">AGREE TO RENTAL AGREEMENT?</label>
+                <input type="checkbox" name="agreement" id="checkbox-id" required>
+            </div>
+            <div class="submit-btn">
+                <button type="submit" id="sub">SUBMIT</button>
+            </div>
+        </div>
+        
+    </form>
+</section>
+
+<footer>
+    <div class="social-media">
+        <a href="#"><img id="instagram" src="images/instalogo.png" alt="Insta" loading="lazy" height="70" width="70"></a>
+        <a href="#"><img id="facebook" src="images/facebooklogo.png" alt="Facebook" loading="lazy" height="70" width="70"></a>
+        <a href="#"><img id="twitter" src="images/twitterlogo.png" alt="Twitter" loading="lazy" height="70" width="70"></a>
+    </div>
+    <div class="footer-contents">
+        <p>WDD 230 - Web Fronted Development Project</p>
+            <p>
+                ©<span id="full-year"></span> <br> Cameron Finch <br> New Mexico
+            </p>
+    </div>
+
+</footer>
+</body>
+</html>
