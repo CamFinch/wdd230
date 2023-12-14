@@ -92,3 +92,45 @@ form{
     background-color: white;
     font-weight: bolder;
 }
+
+@media (max-width: 500px){
+
+    .contact-contents{
+        display: inline;
+        
+    }
+    .map1{
+        border: 2px solid black;
+        width: 300px;
+        height: 350px;
+        margin-top: 50px;
+        margin-left: 33px;
+
+    }
+    
+
+    .map2{
+        width: 300px;
+        height: 350px;
+        border: 2px solid black;
+        margin-top: 50px;
+        margin-left: 33px;
+
+    }
+
+    .contact-info{
+        border: 2px solid black;
+        height: 350px;
+        width: 300px;
+        position: relative;
+        right: 97px;
+  
+    
+    }
+
+    form{
+        position: relative;
+        right: 97px;
+  
+    }
+}

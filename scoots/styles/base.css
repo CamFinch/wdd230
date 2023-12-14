@@ -74,3 +74,32 @@ footer{
 .footer-contents{
     padding-top: 30px;
 }
+
+
+@media (max-width: 500px) {
+    
+    .hero img {
+        height: 200px;
+        width: 400px;
+    }
+
+    #hero-call-to-action{
+        transform: scale(50%);
+        right: 50%;
+        top: 90%;
+    }
+
+    table{
+        transform: scale(56%);
+        margin-right: 30%;
+        position: relative;
+        right: 43%;
+        
+    }
+    nav a{
+        display: block;
+        padding: -5px;
+    }
+
+
+}

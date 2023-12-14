@@ -95,3 +95,10 @@ footer{
     background-color: white;
     font-weight: bolder;
 }
+
+@media (max-width: 500px){
+    form{
+        position: relative;
+        right: 43%;
+    }
+}
