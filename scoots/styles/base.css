@@ -118,6 +118,8 @@ footer{
         display: block;
         padding: -5px;
     }
-
+    #hide-banner-btn{
+        right: 15%;
+    }
 
 }
