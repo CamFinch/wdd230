@@ -18,6 +18,17 @@
     <header>
         <div class="weather-banner">
             <h3>DAILY TEMP HIGH: <span id="high-top"></span></h3>
+            <button id="hide-banner-btn" onclick="hideBanner();">X</button>
+            <script>
+                function hideBanner(){
+                    const hideBtn = document.querySelector('#hide-banner-btn');
+                    const banner = document.querySelector('.weather-banner');
+                    hideBtn.addEventListener('click', () => {
+                        banner.classList.toggle('open');
+                        hideBtn.classList.toggle('open');
+                    });
+                }
+            </script>
             
         </div>
         <h1>COZUMEL SCOOTS</h1>
