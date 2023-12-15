@@ -25,6 +25,9 @@ body{
     position: absolute;
     top: 12%;
     right: 7%;
+    color:rgb(135, 206, 230);
+    background-color: white;
+    border-radius: 20px;
 }
 header{
     text-align: center;
